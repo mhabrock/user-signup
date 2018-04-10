@@ -1,0 +1,27 @@
+{% extends "usbase.html" %}
+
+{% block content %}
+
+<h2>User Signup</h2>
+
+<form action='/welcome' method='post'>
+    <label> Username </label>
+    <input type='text' name='username' value={{username}}> 
+    {{error1}}
+    <br>
+    <label> Password </label>
+    <input type='password' name='password'>
+    {{error2}}
+    <br>
+    <label> Verify Password </label>
+    <input type='password' name='verify'>
+    {{error3}}
+    <br>
+    <label> Email </label> 
+    <input type='text' name='email' value={{email}}>
+    {{error4}}
+    <br>
+    <input type='submit' value='Submit'>
+</form>
+
+{% endblock %}
